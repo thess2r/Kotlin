@@ -1,11 +1,9 @@
 fun main() {
-    val steps = 4000
-    val caloriesBurned = pedometerStepsToCalories(steps);
-    println("Walking $steps steps burns $caloriesBurned calories")
+    val timeSpentToday = 300
+    val timeSpentYesterday = 250
+    println(compareTwoNumbers(timeSpentToday, timeSpentYesterday))
 }
 
-fun pedometerStepsToCalories(numberOfSteps: Int): Double {
-    val caloriesBurnedForEachStep = 0.04
-    val totalCaloriesBurned = numberOfSteps * caloriesBurnedForEachStep
-    return totalCaloriesBurned
+fun compareTwoNumbers(timeSpentToday : Int, timeSpentYesterday: Int): Boolean {
+    return timeSpentToday > timeSpentYesterday
 }
