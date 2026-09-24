@@ -1,13 +1,10 @@
 fun main() {
-    val firstNumber = 10
-    val secondNumber = 5
-    val thirdNumber = 8
+    val operatingSystem = "Chrome OS"
+    val emailId = "sample@gmail.com"
 
-    val result = subtract(firstNumber, secondNumber)
-    val anotherResult = subtract(firstNumber, thirdNumber)
-
-    println("$firstNumber - $secondNumber = $result")
-    println("$firstNumber - $thirdNumber = $anotherResult")
+    println(displayAlertMessage(operatingSystem, emailId))
 }
 
-fun subtract(x: Int, y: Int): Int = x - y
+fun displayAlertMessage(operatingSystem: String, emailId: String): String {
+    return "There's a new sign-in request on $operatingSystem for your Google Account $emailId."
+}
