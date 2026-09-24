@@ -1,7 +1,7 @@
 fun main() {
-    val baseSalary = 5000
-    val bonusAmount = 1000
-    val totalSalary = "$baseSalary + $bonusAmount"
-    println("Congratulations for your bonus! You will receive a total of $totalSalary (additional bonus).")
+    val firstNumber = 10
+    val secondNumber = 5
+    val result = firstNumber + secondNumber
+
+    println("$firstNumber + $secondNumber = $result")
 }
-// I expected current result cause,  val totalSalary = "$baseSalary + $bonusAmount" is in " " that means it just concatenate it
