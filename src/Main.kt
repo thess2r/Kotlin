@@ -1,9 +1,12 @@
 fun main() {
-    val timeSpentToday = 300
-    val timeSpentYesterday = 250
-    println(compareTwoNumbers(timeSpentToday, timeSpentYesterday))
+    println(printWeather("Oral", 10, 40, 10))
 }
 
-fun compareTwoNumbers(timeSpentToday : Int, timeSpentYesterday: Int): Boolean {
-    return timeSpentToday > timeSpentYesterday
+fun printWeather(
+    city: String,
+    lowTemperature: Int,
+    highTemperature: Int,
+    chanceOfRain: Int
+): String {
+    return "City: $city\nLow temperature: $lowTemperature, High temperature: $highTemperature\nChance of rain: $chanceOfRain%"
 }
